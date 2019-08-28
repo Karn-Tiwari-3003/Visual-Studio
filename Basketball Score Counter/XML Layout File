@@ -1,0 +1,25 @@
+<Window x:Class="Basket_Ball.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Basket_Ball"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="774.5" Background="#fff4f4f4">
+    <Grid>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="10,80,0,0" TextWrapping="Wrap" Text="TEAM A" VerticalAlignment="Top" Width="305" FontFamily="Cambria" FontSize="30" TextDecorations="{x:Null}" TextAlignment="Center" FontWeight="Bold" Foreground="#FFE01919"/>
+        <TextBlock HorizontalAlignment="Left" Margin="440,80,0,0" TextWrapping="Wrap" Text="TEAM B" VerticalAlignment="Top" Height="40" Width="314" FontSize="30" FontFamily="Cambria" TextAlignment="Center" FontWeight="Bold" Foreground="#FFE01919" TextDecorations="{x:Null}"/>
+        <Button x:Name="teamBOnePoint" Content="+1 POINT" HorizontalAlignment="Left" Height="45" Margin="493,198,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Background="#FD0095FF" Click="TeamBOnePoint_Click" Foreground="White" BorderBrush="#FFF4F4F4" />
+        <Button x:Name="teamBTwoPoint" Content="+2 POINT" HorizontalAlignment="Left" Height="45" Margin="493,270,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Background="#FD0095FF" Click="TeamBTwoPoint_Click" Foreground="White" BorderBrush="#FFF4F4F4" />
+        <Button x:Name="teamBThreePoint" Content="+3 POINT" HorizontalAlignment="Left" Height="45" Margin="493,338,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Background="#FD0095FF" Click="TeamBThreePoint_Click" Foreground="White" BorderBrush="#FFF4F4F4" />
+        <Button x:Name="teamAOnePoint" Content="+1 POINT" HorizontalAlignment="Left" Height="45" Margin="54,198,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Background="#FD0095FF"  Click="TeamAOnePoint_Click" Foreground="White" BorderBrush="#FFF4F4F4" />
+        <Button x:Name="teamATwoPoint" Content="+2 POINT" HorizontalAlignment="Left" Height="45" Margin="54,270,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Background="#FD0095FF" Click="TeamATwoPoint_Click" Foreground="White" BorderBrush="#FFF4F4F4" />
+        <Button x:Name="teamAThreePoint" Content="+3 POINT" HorizontalAlignment="Left" Height="45" Margin="54,338,0,0" VerticalAlignment="Top" Width="218" FontSize="20" Background="#FD0095FF"  Click="TeamAThreePoint_Click" FontWeight="Normal" Foreground="White" BorderBrush="#FFF4F4F4"/>
+        <TextBox x:Name="displayTeamB" HorizontalAlignment="Left" Height="50" Margin="530,130,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" FontSize="45" TextAlignment="Center" FontFamily="Microsoft YaHei UI" Background="#fff4f4f4" BorderBrush="#FFF4F4F4"/>
+        <TextBox x:Name="displayTeamA" HorizontalAlignment="Left" Height="50" Margin="90,130,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="130" TextAlignment="Center" FontSize="45" FontFamily="Microsoft YaHei UI" Background="#fff4f4f4" BorderBrush="#FFF4F4F4" />
+        <TextBlock Height="65" Margin="5,5,6,0" TextWrapping="Wrap" Text="Basketball Score Counter" VerticalAlignment="Top" FontSize="40" FontWeight="Bold" FontFamily="Comic Sans MS" TextDecorations="{x:Null}" Foreground="White" Padding="2,0" TextAlignment="Center" Background="BlueViolet"/>
+        <Button x:Name="resetButton" Content="RESET" HorizontalAlignment="Left" Height="40" Margin="315,370,0,0" VerticalAlignment="Top" Width="135" Click="ResetButton_Click" Background="LightGray" BorderBrush="#FF731CC9" FontSize="30" FontFamily="Cambria" FontWeight="Bold" />
+        <TextBlock HorizontalAlignment="Left" Height="290" Margin="380,80,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="5
+                   " Background="DeepPink"/>
+    </Grid>
+</Window>
